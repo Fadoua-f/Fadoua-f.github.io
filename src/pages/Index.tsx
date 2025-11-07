@@ -1,12 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import CVHeader from "@/components/CVHeader";
+import ProfileSection from "@/components/ProfileSection";
+import EducationSection from "@/components/EducationSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import SkillsSection from "@/components/SkillsSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <CVHeader />
+      
+      <main className="max-w-6xl mx-auto px-6 md:px-12 py-12">
+        <ProfileSection />
+        <EducationSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <SkillsSection />
+      </main>
+      
+      <footer className="bg-sidebar-header text-sidebar-primary py-6 text-center">
+        <p className="text-sm">
+          © 2025 Fadoua El Mengoug - Tous droits réservés
+        </p>
+      </footer>
     </div>
   );
 };
