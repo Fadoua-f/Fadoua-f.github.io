@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 40 15% 88%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 40 25% 92%;
+    --accent: 40 25% 85%;
     --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,7 +36,7 @@ All colors MUST be HSL.
     --input: 30 8% 80%;
     --ring: 0 0% 10%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-header: 0 0% 10%;
     --sidebar-background: 0 0% 15%;
@@ -47,6 +47,12 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 40 25% 92%;
     --sidebar-border: 0 0% 25%;
     --sidebar-ring: 40 25% 92%;
+
+    /* Portfolio specific */
+    --gradient-start: 40 25% 92%;
+    --gradient-end: 30 15% 85%;
+    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
@@ -97,5 +103,31 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)));
+  }
+
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

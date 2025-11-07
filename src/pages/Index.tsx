@@ -1,26 +1,21 @@
-import CVHeader from "@/components/CVHeader";
-import ProfileSection from "@/components/ProfileSection";
-import EducationSection from "@/components/EducationSection";
-import ExperienceSection from "@/components/ExperienceSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import SkillsSection from "@/components/SkillsSection";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <CVHeader />
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
       
-      <main className="max-w-6xl mx-auto px-6 md:px-12 py-12">
-        <ProfileSection />
-        <EducationSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <SkillsSection />
-      </main>
-      
-      <footer className="bg-sidebar-header text-sidebar-primary py-6 text-center">
+      <footer className="bg-primary text-primary-foreground py-8 text-center">
         <p className="text-sm">
-          © 2025 Fadoua El Mengoug - Tous droits réservés
+          © 2025 Fadoua El Mengoug - Portfolio
         </p>
       </footer>
     </div>
