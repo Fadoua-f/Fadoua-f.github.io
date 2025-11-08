@@ -3,9 +3,16 @@ import { Badge } from "@/components/ui/badge";
 import cryptoImage from "@/assets/project-crypto.jpg";
 import logisticsImage from "@/assets/project-logistics.jpg";
 import forestImage from "@/assets/project-forest.jpg";
+import aiImage from "@/assets/project-ai.jpg";
 
 const Projects = () => {
   const projects = [
+    {
+      image: aiImage,
+      title: "Solution AI - Stage Professionnel",
+      description: "Développement d'une solution d'intelligence artificielle pour l'analyse de données et l'automatisation des processus métiers.",
+      tags: ["Python", "Machine Learning", "TensorFlow", "AI", "Data Science"]
+    },
     {
       image: cryptoImage,
       title: "Application Web de Gestion de Portefeuilles Crypto",
@@ -38,7 +45,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card 
               key={index} 
