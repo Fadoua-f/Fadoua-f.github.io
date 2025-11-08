@@ -9,9 +9,9 @@ const Projects = () => {
   const projects = [
     {
       image: aiImage,
-      title: "Solution AI - Stage Professionnel",
-      description: "Développement d'une solution d'intelligence artificielle pour l'analyse de données et l'automatisation des processus métiers.",
-      tags: ["Python", "Machine Learning", "TensorFlow", "AI", "Data Science"]
+      title: "Moteur d'Extraction Intelligent - AREX Maroc",
+      description: "Solution complète combinant intelligence artificielle et automatisation pour collecter et structurer automatiquement les données techniques à partir de documents numériques, photos ou plans. Interface interactive pour l'importation de fichiers et génération automatique de listes de points techniques.",
+      tags: ["Python", "Machine Learning", "IA", "OCR", "Automatisation"]
     },
     {
       image: cryptoImage,
