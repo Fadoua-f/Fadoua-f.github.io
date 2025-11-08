@@ -36,16 +36,15 @@ const About = () => {
           {highlights.map((item, index) => (
             <Card 
               key={index} 
-              className="p-8 text-center hover-lift hover-glow bg-card border-border group cursor-pointer transform transition-all duration-500"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="p-8 text-center hover-lift bg-card border-border"
             >
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-accent to-accent/50 text-accent-foreground rounded-full mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/20 text-accent rounded-full mb-4">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-card-foreground group-hover:text-accent transition-colors">
+              <h3 className="text-xl font-semibold mb-2 text-card-foreground">
                 {item.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground">
                 {item.description}
               </p>
             </Card>

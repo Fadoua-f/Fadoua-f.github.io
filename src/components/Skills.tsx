@@ -41,24 +41,23 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 
-              className="p-6 hover-lift hover-glow bg-card border-border group cursor-pointer transform transition-all duration-500 hover:border-accent"
-              style={{ animationDelay: `${index * 0.05}s` }}
+              className="p-6 hover-lift bg-card border-border"
             >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-3 bg-gradient-to-br from-accent/20 to-accent/10 text-accent rounded-xl group-hover:from-accent group-hover:to-accent/80 group-hover:text-accent-foreground transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-6 shadow-md">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-primary/10 text-primary rounded-lg">
                   {category.icon}
                 </div>
-                <h3 className="font-bold text-card-foreground group-hover:text-accent transition-colors">
+                <h3 className="font-bold text-card-foreground">
                   {category.title}
                 </h3>
               </div>
-              <ul className="space-y-3">
+              <ul className="space-y-2">
                 {category.skills.map((skill, skillIndex) => (
                   <li 
                     key={skillIndex} 
-                    className="text-sm text-muted-foreground flex items-center gap-3 group-hover:text-accent transition-colors"
+                    className="text-sm text-muted-foreground flex items-center gap-2"
                   >
-                    <span className="w-2 h-2 bg-accent rounded-full group-hover:scale-150 transition-transform shadow-sm"></span>
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
                     {skill}
                   </li>
                 ))}

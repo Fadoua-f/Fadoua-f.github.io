@@ -43,18 +43,16 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className="overflow-hidden hover-lift hover-glow bg-card border-border group cursor-pointer transform transition-all duration-500 hover:border-accent"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="overflow-hidden hover-lift bg-card border-border group"
             >
-              <div className={`bg-gradient-to-br ${project.color} p-8 flex items-center justify-center relative overflow-hidden`}>
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="text-primary group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 relative z-10">
+              <div className={`bg-gradient-to-br ${project.color} p-8 flex items-center justify-center`}>
+                <div className="text-primary group-hover:scale-110 transition-transform duration-300">
                   {project.icon}
                 </div>
               </div>
               
               <div className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-card-foreground group-hover:text-accent transition-colors">
+                <h3 className="text-xl font-bold text-card-foreground">
                   {project.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -65,7 +63,7 @@ const Projects = () => {
                     <Badge 
                       key={tagIndex} 
                       variant="secondary"
-                      className="text-xs group-hover:bg-accent/20 group-hover:text-accent transition-colors border border-transparent group-hover:border-accent/30"
+                      className="text-xs"
                     >
                       {tag}
                     </Badge>
