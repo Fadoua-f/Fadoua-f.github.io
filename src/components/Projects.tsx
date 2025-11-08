@@ -1,29 +1,28 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Wallet, TruckIcon, Flame } from "lucide-react";
+import cryptoImage from "@/assets/project-crypto.jpg";
+import logisticsImage from "@/assets/project-logistics.jpg";
+import forestImage from "@/assets/project-forest.jpg";
 
 const Projects = () => {
   const projects = [
     {
-      icon: <Wallet className="w-8 h-8" />,
+      image: cryptoImage,
       title: "Application Web de Gestion de Portefeuilles Crypto",
       description: "Création d'une application web de gestion de portefeuilles électroniques avec intégration blockchain.",
-      tags: ["React", "MetaMask", "Hardhat", "Solidity", "Web3"],
-      color: "from-blue-500/20 to-purple-500/20"
+      tags: ["React", "MetaMask", "Hardhat", "Solidity", "Web3"]
     },
     {
-      icon: <TruckIcon className="w-8 h-8" />,
+      image: logisticsImage,
       title: "Optimisation Logistique",
       description: "Développement d'une solution d'optimisation des tournées de distribution pour les pharmacies de Beni Mellal.",
-      tags: ["Python", "Algorithmes", "Optimisation", "Data Analysis"],
-      color: "from-green-500/20 to-teal-500/20"
+      tags: ["Python", "Algorithmes", "Optimisation", "Data Analysis"]
     },
     {
-      icon: <Flame className="w-8 h-8" />,
+      image: forestImage,
       title: "Jungle Guard - Détection d'Incendies",
       description: "Système IoT de détection précoce des incendies forestiers avec communication en temps réel.",
-      tags: ["Arduino", "Raspberry Pi", "MQTT", "IoT", "Capteurs"],
-      color: "from-orange-500/20 to-red-500/20"
+      tags: ["Arduino", "Raspberry Pi", "MQTT", "IoT", "Capteurs"]
     }
   ];
 
@@ -45,10 +44,12 @@ const Projects = () => {
               key={index} 
               className="overflow-hidden hover-lift bg-card border-border group"
             >
-              <div className={`bg-gradient-to-br ${project.color} p-8 flex items-center justify-center`}>
-                <div className="text-primary group-hover:scale-110 transition-transform duration-300">
-                  {project.icon}
-                </div>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
               
               <div className="p-6 space-y-4">
