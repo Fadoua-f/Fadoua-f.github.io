@@ -11,7 +11,7 @@ const Contact = () => {
             Contactez-Moi
           </h2>
           <p className="text-muted-foreground text-lg">
-            Envie de collaborer ? N'hésitez pas à me contacter
+          
           </p>
         </div>
 
