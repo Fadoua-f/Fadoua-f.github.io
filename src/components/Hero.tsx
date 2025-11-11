@@ -28,19 +28,19 @@ const Hero = () => {
           <div className="order-1 md:order-2 space-y-6 text-center md:text-left">
             <div className="space-y-2">
               <p className="text-accent text-lg font-medium animate-fade-in">
-                Bonjour, je suis
+              
               </p>
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight animate-fade-in">
-                Fadoua El Mengoug
+                ELMENGOUG Fadoua
               </h1>
               <p className="text-2xl md:text-3xl text-primary-foreground/80 animate-fade-in">
-                Ingénieure en Transformation Digitale
+               Élève Ingénieure en Transformation Digitale
               </p>
             </div>
 
             <p className="text-lg text-primary-foreground/70 max-w-xl animate-fade-in">
               Passionnée par l'innovation technologique et la création de solutions digitales 
-              qui transforment les industries. Spécialisée en développement web, IoT et optimisation.
+              qui transforment les industries. 
             </p>
 
             <div className="flex gap-4 justify-center md:justify-start animate-fade-in">
