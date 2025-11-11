@@ -63,35 +63,11 @@ const About = () => {
                   <p className="font-semibold text-card-foreground">
                     Diplôme d'Ingénieur d'État - Transformation Digitale Industrielle
                   </p>
-                  <p className="text-sm">ENSA Beni Mellal | 2022 - 2025</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-card-foreground">
-                    Classes Préparatoires - MP
-                  </p>
-                  <p className="text-sm">Lycée Omar Ibn Abdelaziz, Oujda | 2020 - 2022</p>
+                  <p className="text-sm">ENSA Beni Mellal | 2026</p>
                 </div>
               </div>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold mb-3 text-card-foreground flex items-center gap-2">
-                <Briefcase className="w-6 h-6 text-primary" />
-                Expériences
-              </h3>
-              <div className="space-y-3 text-muted-foreground">
-                <div>
-                  <p className="font-semibold text-card-foreground">Stage à INWI</p>
-                  <p className="text-sm mb-2">Casablanca | Juillet 2024</p>
-                  <p className="text-sm">Découverte de l'infrastructure réseau et des équipements télécoms</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-card-foreground">Stage chez ETIC TECHNOLOGIES</p>
-                  <p className="text-sm mb-2">Casablanca | Juillet 2023</p>
-                  <p className="text-sm">Développement d'une application web pour plateforme touristique</p>
-                </div>
-              </div>
-            </div>
           </div>
         </Card>
       </div>
