@@ -31,7 +31,7 @@ const Contact = () => {
             </a>
 
             <a 
-              href="tel:+212633773434"
+              href="tel:+212633327734"
               className="flex items-center gap-4 p-4 rounded-lg hover:bg-accent/10 transition-colors group"
             >
               <div className="p-3 bg-primary/10 text-primary rounded-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
